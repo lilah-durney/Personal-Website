@@ -16,12 +16,15 @@ nav ul {
     font-size:20px;
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     padding-right:80px;
+    font-weight: bold;
 }
 
 nav ul li {
     display: inline;
     margin-right: 20px;
-    padding:40px;
+    padding-right:40px;
+    padding-left:40px;
+    padding-top:40px;
 }
 
 .horizLine {
@@ -31,24 +34,20 @@ nav ul li {
     margin-right: 150px;
     margin-left:0;
 
-    
 }
 
 .container {
     display: flex;
     flex-direction: column;
-    height:100vh;
-    align-items: flex-start;
-    top:90px;
-    position: relative;
-    padding-top: 20px;
+    align-items: flex-end;
+    
 }
 
 .verticalLine {
-    border-left: 12px solid white;
+    border-left: 9px solid white;
     margin-right: 20px;
     margin-left: 100px;
-    padding: 0;
+    margin-top:200px;
 
 }
 
@@ -57,10 +56,10 @@ nav ul li {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    height: 100vh;
-    padding: 20px;
+    height: 80vh;
+    padding-left:20px;
     font-size: 40px;
-    margin: 0
+    margin-top: 0px;
 }
 
 .developer {
@@ -73,6 +72,56 @@ nav ul li {
 }
 
 .bio {
-    padding: 20px;
+    margin:20px;
+    margin-right: 600px;
+}
+
+.projects{
+    padding-left: 20px;
+    background-color: #10142B;
+    text-align:left;
+    color: black;
+    margin-right: 200px;
+    margin-bottom: 100px;
+}
+
+.projects h2{
+    font-size: 40px;
+    font-family: 'Press Start 2P', cursive;
+    margin-bottom:40px;
+    color: white;
+
+}
+
+.icon img {
+    width: 30%;
+    height: 30%;
     margin-bottom: 20px;
+  }
+
+.projectsGrid{
+    display:grid;
+    grid-template-columns:  repeat(3,1fr);
+    gap: 50px;
+    margin-left: 0;
+
+}
+
+.projectCard {
+    background-color: white;
+    border-radius: 25px;
+    border: 15px white solid;
+    
+}
+
+
+
+.orgs {
+    margin: 20px;
+
+}
+
+.orgs ul{
+    list-style:none;
+
 }
