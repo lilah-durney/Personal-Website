@@ -25,7 +25,26 @@ nav ul li {
     padding-right:40px;
     padding-left:40px;
     padding-top:40px;
+    overflow: hidden;
+
 }
+
+nav a{
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s, transform 0.3s;
+    display: inline-block;
+    font-weight:500;
+    
+}
+nav a:hover {
+    transform: scale(1.1); /* Slightly increase the size of the text */
+    transition: color 0.3s, transform 0.3s; /* Smooth transition for both color and size */
+    font-weight:600;
+}
+
+
+
 
 .horizLine {
     margin-top:30px;
@@ -38,7 +57,7 @@ nav ul li {
 
 .container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-end;
     
 }
@@ -48,14 +67,17 @@ nav ul li {
     margin-right: 20px;
     margin-left: 100px;
     margin-top:200px;
-
+    
 }
 
+.hero-wrapper {
+    margin-top: -62.5px;
+}
 
 .hero {
     font-family: "Port Lligat Sans";
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;
     height: 70vh;
@@ -108,10 +130,28 @@ nav ul li {
 }
 
 .icon img {
+    margin-left: 5px;
+    margin-top: 10px;
+  }
+
+.gamer img {
     width: 30%;
     height: 30%;
-    margin-bottom: 20px;
-  }
+    margin-left: 5px;
+    margin-top: 10px;
+
+}
+.musical img {
+    width: 25%;
+    height: 25%;
+
+}
+
+.computer img {
+    width: 30%;
+    height: 30%;
+
+}
 
 .projectsGrid{
     display:grid;
@@ -121,15 +161,66 @@ nav ul li {
 
 }
 
+
 .projectCard {
     background-color: white;
     border-radius: 25px;
     border: 15px white solid;
     line-height:150%;
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.2);
     
 }
 
+.art-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:50px;
+    padding-left: 20px;
+}
 
+.traditional-pieces h2 {
+    font-family: cursive;
+    margin: 20px;
+    font-size:30px;
+}
+
+.traditional-pieces h3{
+    white-space: nowrap;
+}
+
+.traditional-pieces p{
+    margin-top: -10px;
+}
+
+.digital-pieces {
+    margin-left:20px;
+    margin-top: 170px;
+    padding-bottom: 100px;
+}
+
+.digital-pieces h2 {
+    font-family: cursive;
+    font-size: 30px;
+
+}
+
+.digital-pieces p{
+    margin-top:-15px;
+    font-size: 18px;
+}
+
+
+
+.photo img {
+    height:800%;
+    width:800%;
+}
+
+
+.art-card {
+    width:10%;
+    height:10%;
+}
 
 .orgs h2{
     font-size:35px;
@@ -137,13 +228,73 @@ nav ul li {
 }
 .orgs {
     margin-bottom:200px;
-    
 
 }
 
 .orgs ul{
     list-style:none;
-    margin-left:-14px;
+    margin-left:-20px;
     line-height:150%;
 
+}
+
+.contact-card {
+    background-color:white;
+    border-radius:25px;
+    border: 15px white solid;
+    margin-bottom: 100px;
+    color: black;
+    margin-left:20px;
+    margin-right:800px;
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.2);
+}
+    
+
+
+.contact-card h2 {
+    margin-bottom: 4px;
+    margin-left:14px;
+    margin-top:4px;
+    
+}
+
+.email, .linkedin {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+.email p{
+    margin-left:5px;
+}
+
+.linkedin p{
+    margin-left:4px;
+}
+
+.email img{
+    width:8%;
+    height:8%;
+}
+
+.linkedin img{
+    width:8%;
+    height:8%;
+}
+
+
+.contact-container {
+    display:flex;
+}
+
+.contact-vertical-line{
+    border-left: 9px solid white;
+    margin-right: 20px;
+    margin-left: 100px;
+    margin-top:200px;
+    height:61vh;
+
+}
+
+html {
+    scroll-behavior: smooth;
 }

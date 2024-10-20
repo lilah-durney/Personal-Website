@@ -24,11 +24,11 @@
     <header>
         <nav>
             <ul>
-                <li>Home</li>
-                <li>Projects</li>
-                <li>About Me</li>
-                <li>Portfolio</li>
-                <li>Contact</li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#" onclick="navigateToSection('projects')">Projects</a></li>
+                <li><a href="#" onclick="navigateToSection('about')">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -40,10 +40,13 @@
     <div class = "container">
         
         <div class = "verticalLine">
-    
+        <div class = "hero-wrapper">
             <section class = "hero">
             <h1>Hey! I'm Lilah, a <span class = "developer"> developer</span> &amp; <span class = "designer">designer</span>.</h1>
             </section>
+        </div>
+        <section id="about"></section>
+        
             <section class = "bio">
                 <h2>About</h2>
                 <p>I’m a sophomore at UC Berkeley studying computer science. 
@@ -52,23 +55,24 @@
                 I’m also currently learning React, and a few other languages. Outside of class, 
                 I’m working in graphic design. I also love writing and producing music! Some of my 
                 other hobbies include rock climbing, surfing, hiking, and anything else in nature. </p>
+                <section id="projects"></section>
             </section>
 
+            
 
             <section class="projects">
                 <h2>Projects</h2>
                 <div class="projectsGrid">
                   <div class="projectCard">
-                    <div class="icon">
+                    <div class="icon gamer">
                         <img src="gamer.png" alt="Build Your Own World Icon">
                     </div>
-                
                     <h3>Build Your Own World</h3>
                     <p>This is a maze exploration game where users can control an avatar to collect coins before the timer runs out. It also features a heads up display with hover feedback, a timer, and a coin counter.</p>
                   </div>
                   
                   <div class="projectCard">
-                    <div class="icon">
+                    <div class="icon musical">
                         <img src="musical.png" alt="MusiCal Icon">
                     </div>
                     <h3>MusiCal</h3>
@@ -76,7 +80,7 @@
                   </div>
                   
                   <div class="projectCard">
-                    <div class="icon">
+                    <div class="icon computer">
                         <img src="computer.png" alt="Personal Website Icon">
                     </div>
                     <h3>Personal Website</h3>
